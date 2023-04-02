@@ -1,0 +1,86 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+    margin: 0px;
+    padding: 0px;
+}
+
+header > h3 {
+    --padding-size: 1em;
+    padding-top: var(--padding-size);
+    padding-bottom: var(--padding-size);
+    text-align: center;
+    margin: 0px;
+}
+
+img {
+    position: absolute;
+}
+
+#checkers_game_holder {
+    margin: auto;
+    width: fit-content;
+}
+
+.square_one, .square_two {
+    --size: 40px;
+    height: var(--size);
+    width: var(--size);
+    display: inline-block;
+    font-size: none;
+    margin: 2px;
+    border: 1px solid #6c3f3f;
+}
+
+.square_one {
+    background-color: black;
+}
+
+.square_two {
+    background-color: rgb(128, 26, 0);
+}
+
+.square {
+
+    transform: scale(1); 
+    animation-name: pulse;  
+    animation-duration: 1s;   
+    animation-timing-function: ease-in-out;  
+    transition: transform 0.3s ease; 
+}
+
+.square:hover img {
+    animation-name: pulse; 
+    animation-duration: 1s; 
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out; 
+}
+
+#current_player {
+    text-align: center;
+    color: gold;
+}
+
+.checker_holder {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.clicked {
+    opacity: 0.5;
+}
+
+@keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+ }
+
