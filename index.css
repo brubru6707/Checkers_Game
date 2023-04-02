@@ -72,6 +72,10 @@ img {
     opacity: 0.5;
 }
 
+::selection {
+    user-select: none;
+}
+
 @keyframes pulse {
     0% {
       transform: scale(1);
