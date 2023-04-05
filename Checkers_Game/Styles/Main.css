@@ -1,0 +1,20 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+    margin: 0px;
+    padding: 0px;
+}
+
+header > h3 {
+    --padding-size: 1em;
+    padding-top: var(--padding-size);
+    padding-bottom: var(--padding-size);
+    text-align: center;
+    margin: 0px;
+}
+
+::selection {
+    user-select: none;
+}
+
